@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { featureData } from '../mocks/homeMock';
+import { featureData } from '../../mocks/home/homeMock';
 
 const getFeatured = (req: Request, res: Response) => {
     try {
