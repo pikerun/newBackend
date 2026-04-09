@@ -3,6 +3,6 @@ import homeController from '../../controllers/home/homeController';
 
 const router = express.Router();
 
-router.get('/api/home/featured', homeController.getFeatured);
+router.get('/featured', homeController.getFeatured);
 
 export default router;

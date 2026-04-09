@@ -10,8 +10,8 @@ app.get('/api', (req: Request, res: Response) => {
     res.send('Express is working!');
 });
 
-app.use(homeRoutes);
-app.use('/stores', detailRoutes);
+app.use('/api/home',homeRoutes);
+app.use('/api/stores', detailRoutes);
 
 
 // サーバーを起動して待機する
