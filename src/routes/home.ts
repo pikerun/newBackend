@@ -1,8 +1,0 @@
-import express, { Request, Response } from 'express';
-import homeController from '../controllers/homeController';
-
-const router = express.Router();
-
-router.get('/api/home/featured', homeController.getFeatured);
-
-export default router;
