@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express';
 import homeRoutes from './routes/home/home';
 import detailRoutes from './routes/stores/detail';
-import sweetsRoutes from './routes/sweets';
+import sweetsRoutes from './routes/sweets/sweets';
 
 const app = express();
 const port = 3000;

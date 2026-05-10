@@ -2,6 +2,7 @@ import express, { Request, Response } from 'express';
 //fs, pathモジュールのインポート
 import fs from 'fs';
 import path from 'path';
+import { Sweet } from '../types';
 
 const router = express.Router();
 
@@ -12,7 +13,7 @@ router.get('/', (req: Request, res: Response) => {
         // fsモジュールを使ってファイルを読み込む
         const data = fs.readFileSync(filePath, 'utf-8');
         //文字列データをJSONオブジェクトに変換
-        const sweetsData = JSON.parse(data);
+        const sweetsData: Sweet[] = JSON.parse(data);
         //JSONレスポンスとしてブラウザに送信
         res.json(sweetsData);
 
